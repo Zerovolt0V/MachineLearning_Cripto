@@ -11,16 +11,17 @@ Proyecto de detección de fraude en transacciones con tarjetas de crédito usand
 - [ ] Análisis de la variable objetivo (`Fraud`) y balance de clases
 
 ### 2. Preprocesamiento
-- [ ] Selección de características relevantes
-- [ ] Codificación de variables categóricas (one-hot, label encoding)
-- [ ] Normalización de variables numéricas (MinMaxScaler, StandardScaler)
-- [ ] División del dataset: entrenamiento, validación y prueba (70-15-15)
-- [ ] Manejo del desbalance de clases (sobremuestreo, submuestreo, pesos de clase)
+------
+- [x] Selección de características relevantes
+- [x] Codificación de variables categóricas (one-hot, label encoding)
+- [x] Normalización de variables numéricas (MinMaxScaler, StandardScaler)
+- [x] División del dataset: entrenamiento, validación y prueba (70-15-15)
+- [x] Manejo del desbalance de clases (sobremuestreo, submuestreo, pesos de clase)
 
 ### 3. Modelado
 - [ ] Implementación de Naive Bayes Gaussiano
 - [ ] Diseño y entrenamiento de un Perceptrón Multicapa (MLP) con al menos una capa oculta
-- [ ] Ajuste de hiperparámetros para ambos modelos
+- [ ] Ajuste de hiperparámetros para ambos modelos. Learning rate
 
 ### 4. Evaluación
 - [ ] Evaluación en el conjunto de prueba
@@ -40,3 +41,37 @@ Proyecto de detección de fraude en transacciones con tarjetas de crédito usand
 ---
 
 **Nota:** Mantener una documentación clara de las decisiones tomadas en cada etapa.
+
+
+
+## PReguntas DS
+
+La hora del dia se relaciona con el incremento o decremento de transacciones fraudulentas?
+
+
+Hay categorias del comercio donde el fraude sea mas frecuente?
+
+El dispositivo utlizado para la transaccion impacta en la probabilidad de fraude?
+
+La velocidad de transaccion se encuentra asociada a la existencia de un fraude?
+
+
+Pro:
+
+Hay franjas horarias (ajustada por ubicacion), relacionadas con un incremento o decremento de fraude. (enriquecimiento)
+
+La direccion ip de alguna forma puede darnos informacion?
+    - Patron que sugiera enmascaramiento, o un numero de dispositivos conectados a la misma red
+
+Watafa:
+
+Existen nombres de comercio que sugieran la precencia de un fraude
+
+
+
+
+
+
+# primero Naive Bayes.
+
+Luego GAN https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/
